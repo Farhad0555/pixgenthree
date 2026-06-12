@@ -3,6 +3,7 @@ import { Button, Card, Chip, Separator } from "@heroui/react";
 import { FaHeart } from "react-icons/fa";
 import Image from "next/image";
 import { IoMdDownload } from "react-icons/io";
+import Link from "next/link";
 const PhotoCard = ({ photo }) => {
     return (
         <Card className="border-2">
@@ -25,7 +26,9 @@ const PhotoCard = ({ photo }) => {
                     <p>{photo.downloads}</p>
                 </div>
             </div>
-            <Button variant="outline" className="w-full">View</Button>
+            <Button variant="outline" className="w-full">
+                <Link href={`/allphoto/${photo.id}`}>View</Link>
+            </Button>
 
         </Card>
     );
