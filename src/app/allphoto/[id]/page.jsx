@@ -8,7 +8,7 @@ const pituredetailshowpage = async ({ params }) => {
     console.log(photo);
     return (
         <div>
-            <h1>Picture detail loading...{id}</h1>
+            <h1 className="text-center font-black text-3xl m-5 p-5">Picture Detail For Id...{id}</h1>
             <Card className="w-full items-stretch md:flex-row">
                 <div className="relative h-[140px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[120px] sm:w-[120px]">
                     <Image src={photo.imageUrl} alt="img" height={500} width={500}/>
